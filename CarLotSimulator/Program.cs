@@ -56,7 +56,11 @@ namespace CarLotSimulator
             car3.MakeEngineNoise();
             car3.MakeHonkNoise();
 
-            foreach(CarLotSimulator.Car car in inventory)
+            Console.WriteLine();
+            Console.WriteLine($"There are {CarLot.numberOfCars} cars available now:");
+            Console.WriteLine();
+
+            foreach (CarLotSimulator.Car car in inventory)
             {
 
                 Console.WriteLine($"Currently available: {car.Year} {car.Make} {car.Model}.");
